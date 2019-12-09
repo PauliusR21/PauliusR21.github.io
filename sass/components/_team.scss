@@ -1,0 +1,135 @@
+.team
+{
+    position: relative;
+    
+    &__member {
+        height: 40rem;
+        width: 39rem;
+        position: relative;
+        overflow: hidden;
+        border-radius: 1rem;
+        
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 180%;
+            height: 100%;
+            width: 100%;
+            background: rgba($color-white, .3);
+            z-index: 1;
+            transform: skew(45deg);
+            transition: .5s; 
+        }
+
+        &:hover:before {
+            left: -180%;
+        }
+
+        &--1 {
+            height: 100%;
+            width: 100%;
+            filter: grayscale(100%);
+            transition: 2s;
+
+            &:hover {
+                filter: grayscale(0%);
+                transform: scale(1.1);  
+            }
+        }
+
+        &--2 {
+            height: 100%;
+            width: 100%;
+            filter: grayscale(100%);
+            transition: 2s;
+
+            &:hover {
+                filter: grayscale(0%);
+                transform: scale(1.1);  
+            }
+        }
+        //Member name
+        h3{
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-primary, 0.9),
+                rgba($color-primary-dark, 0.7));
+            font-family: Poppins;
+            color: $color-white;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 1rem 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            transform: perspective(40rem) rotateY(90deg);
+            transform-origin: right;
+            transition: 1s;
+        }
+
+        &:hover h3 {
+            transform: perspective(40rem) rotateY(0deg); 
+        }
+
+        //member links
+        ul {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background: rgba(255,255,255,0);
+
+            li {
+                background: #333;
+                height: 4rem;
+                width: 4rem;
+                text-align: center;
+                line-height: 4rem;
+                transform: perspective(80rem) rotateY(90deg);
+                transition: .5s;
+                transform-origin: left;
+        
+                a {
+                    color: tomato;
+                    background: rgba(255,255,255,0); 
+                }
+        
+                i {
+                    color: tomato;
+                    background: rgba(255,255,255,0);
+
+                    &:hover {
+                        color: #fff;
+                        background: rgba(255,255,255,0);
+                    }
+                }
+            }
+        }
+        //member links hover
+        &:hover ul li{
+            transform: perspective(80rem) rotateY(0deg); 
+
+            &:nth-child(1){
+                transition-delay: .2s;   
+            }
+    
+            &:nth-child(2){
+                transition-delay: .6s;   
+            }
+    
+            &:nth-child(3){
+                transition-delay: .8s;   
+            }
+    
+            &:nth-child(4){
+                transition-delay: 1s;   
+            }
+        }
+
+       
+    }
+}

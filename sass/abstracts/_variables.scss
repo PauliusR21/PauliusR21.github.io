@@ -1,0 +1,52 @@
+//COLORS
+$color-primary:#6D165E;
+$color-primary-light:rgb(139, 93, 190);
+$color-primary-dark:#2B166D;
+
+$color-secondary-light: rgb(0, 217, 255);
+$color-secondary-dark: rgb(75, 36, 98);
+
+$color-tertiary-light: rgb(236, 164, 245);
+$color-tertiary-dark: rgb(120, 19, 138);
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-white: white;
+$color-black: black;
+
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 4rem;
+$gutter-horizontal: 6rem;
+
+// FONT
+$default-font-size: 1.6rem;
+
+//FORM
+$c1: #34495e; // Gray
+
+$c2: #2980b9; // Blue
+$c3: darken($c2, 10%); // Darker blue
+
+$c4: #95a5a6; // Light gray
+$c5: darken($c4, 10%); // Darker gray
+
+$c6: #27ae60; // Green
+$c7: darken($c6, 10%); // Darker green
+
+$c8: #e74c3c; // Red
+   
+$white: #fff;
+$black: #000;
+$grayLighter: #ececec;
+$grayLight: darken($grayLighter, 20%);
+$gray: darken($grayLight, 20%);
+$grayDark: darken($gray, 20%);
+$grayDarker: darken($grayDark, 20%);
+$grayDarkest: darken($grayDarker, 20%);
