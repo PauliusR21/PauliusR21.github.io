@@ -12,11 +12,13 @@
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         <title>A&P | Creations</title>
     </head>
-    <body>
+    <body onload="myFunction()" style="margin:0;">
+    <!-- <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom"></div> -->
         <nav class="navigation">
             <ul class="navigation__list">
-                <li class="navigation__item"></li><a href="#" class="navigation__link">Main page</a></li>
                 <li class="navigation__item"></li><a href="#section-booking" class="navigation__link">Booking</a></li>
+                <li class="navigation__item"></li><a href="#section-gallery" class="navigation__link">Gallery</a></li>
                 <li class="navigation__item"></li><a href="#footer__navigation" class="navigation__link">Contacts</a></li>
             </ul>
         </nav>
@@ -95,7 +97,7 @@
                         ducimus quam nisi exercitationem omnis earum qui.
                     </p>
 
-                    <a href="gallery.html" class="btn-text">See more &rarr;</a>
+                    <a href="#section-gallery" class="btn-text">See more &rarr;</a>
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
@@ -223,6 +225,114 @@
                 </div>
             </div>
         </section>
+        <section class="section-gallery" id="section-gallery">
+            <div class="row">
+                <div class="u-center-text">
+                    <h2 class="heading-secondary">Gallery</h2>
+                </div>
+                <div class="wrap">
+                    <div class="gallery">
+                        <figure class="gallery__item gallery__item--1">
+                            <a href="#img1">
+                                <video class="autoplay gallery__img" muted>
+                                    <source src="img/video.mp4" type="video/mp4">
+                                    <source src="img/video.webm" type="video/webm">
+                                    Your browser is not supported!
+                                </video>
+                            </a>
+                            <div class="lightbox" id="img1">
+                                <video class="loghtbox__item" controls>
+                                    <source src="img/video.mp4" type="video/mp4">
+                                    <source src="img/video.webm" type="video/webm">
+                                    Your browser is not supported!
+                                </video>
+                                <a href="#_" class="btn-close">&times;</a>
+                            </div>
+                        </figure>
+                        <figure class="gallery__item gallery__item--3">
+                            <a href="#img3">
+                                <video class="autoplay gallery__img" muted>
+                                    <source src="img/video2.mp4" type="video/mp4">
+                                    <source src="img/video.webm" type="video/webm">
+                                    Your browser is not supported!
+                                </video>
+                            </a>
+                            <div class="lightbox" id="img3">
+                                <video class="loghtbox__item" controls>
+                                    <source src="img/video2.mp4" type="video/mp4">
+                                    <source src="img/video.webm" type="video/webm">
+                                    Your browser is not supported!
+                                </video>
+                                <a href="#_" class="btn-close">&times;</a>
+                            </div>
+                        </figure>
+        
+                        <figure class="gallery__item gallery__item--4">
+                            <a href="#img4">
+                                <video class="autoplay gallery__img" muted>
+                                    <source src="img/video3.mp4" type="video/mp4">
+                                    <source src="img/video.webm" type="video/webm">
+                                    Your browser is not supported!
+                                </video>
+                            </a>
+                            <div class="lightbox" id="img4">
+                                <video class="loghtbox__item" controls>
+                                    <source src="img/video3.mp4" type="video/mp4">
+                                    <source src="img/video.webm" type="video/webm">
+                                    Your browser is not supported!
+                                </video>
+                                <a href="#_" class="btn-close">&times;</a>
+                            </div>
+                        </figure>
+        
+                        <figure class="gallery__item gallery__item--5">
+                            <a href="#img5">
+                                <video class="autoplay gallery__img" muted>
+                                    <source src="img/video5.mp4" type="video/mp4">
+                                    <source src="img/video.webm" type="video/webm">
+                                    Your browser is not supported!
+                                </video>
+                            </a>
+                            <div class="lightbox" id="img5">
+                                <video class="loghtbox__item" controls>
+                                    <source src="img/video5.mp4" type="video/mp4">
+                                    <source src="img/video.webm" type="video/webm">
+                                    Your browser is not supported!
+                                </video>
+                                <a href="#_" class="btn-close">&times;</a>
+                            </div>
+                        </figure>
+        
+                        <figure class="gallery__item gallery__item--6">
+                            <a href="#img6">
+                                <video class="autoplay gallery__img" muted>
+                                    <source src="img/stangmovie.mp4" type="video/mp4">
+                                    <source src="img/video.webm" type="video/webm">
+                                    Your browser is not supported!
+                                </video>
+                            </a>
+                            <div class="lightbox" id="img6">
+                                <video class="loghtbox__item" controls>
+                                    <source src="img/stangmovie.mp4" type="video/mp4">
+                                    <source src="img/video.webm" type="video/webm">
+                                    Your browser is not supported!
+                                </video>
+                                <a href="#" class="btn-close">&times;</a>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row">
+                <div class="u-center-text">
+                    <h2 class="heading-secondary">Website gallery</h2>
+                </div>
+            <div class="row">
+                <div class="u-center-text">
+                    <h2 class="heading-secondary">Music gallery</h2>
+                </div>
+            </div> -->
+        </section>
         <div class="u-center-text u-margin-bottom-big">
             <h2 class="heading-secondary">
                 Our team
@@ -237,10 +347,10 @@
                             <h3>Paulius Rudaitis</h3>
                             <div class="team-links">
                                 <ul>
-                                    <li><a href="#"><i class="fab fa-github"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="https://github.com/atuljustano"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="https://www.instagram.com/atulkprajapati2000/"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://twitter.com/atuljustano"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCf-KfxuY8PZBSD_8RW2nYsw"><i class="fab fa-youtube"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -254,14 +364,14 @@
                 <div class="col-1-of-2">
                     <div class="team">
                         <div class="team__member">
-                            <img src="img/paulius.jpg" alt="Team-member-paulius" class="team__member--2">
+                            <img src="img/paulius.jpg" alt="Team-member-paulius" class="team__member--1">
                             <h3>Paulius Rudaitis</h3>
                             <div class="team-links">
                                 <ul>
-                                    <li><a href="#"><i class="fab fa-github"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="https://github.com/atuljustano"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="https://www.instagram.com/atulkprajapati2000/"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://twitter.com/atuljustano"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCf-KfxuY8PZBSD_8RW2nYsw"><i class="fab fa-youtube"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -277,23 +387,29 @@
         <footer class="footer">
             <div class="footer__logo-box">
                 <picture class="footer__logo">
-                    <img srcset="img/logo.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo.png">
+                    <img src="img/logo.png" alt="Full logo">
                 </picture>
             </div>
             <div class="row">
                 <div class="col-1-of-2">
                     <div class="footer__navigation" id="footer__navigation">
                         <ul class="footer__list">
-                            <li class="footer__item"><a class="footer__link" href="#"><i class="fab fa-facebook-square"></i></a></li>
-                            <li class="footer__item"><a class="footer__link" href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li class="footer__item"><a class="footer__link" href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li class="footer__item"><a class="footer__link" href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li class="footer__item"><a class="footer__link" href="https://facebook.com/atuljustano"><i class="fab fa-facebook-square"></i></a></li>
+                            <li class="footer__item"><a class="footer__link" href="https://www.instagram.com/atulkprajapati2000/"><i class="fab fa-instagram"></i></a></li>
+                            <li class="footer__item"><a class="footer__link" href="https://twitter.com/atuljustano"><i class="fab fa-twitter"></i></a></li>
+                            <li class="footer__item"><a class="footer__link" href="https://www.youtube.com/channel/UCf-KfxuY8PZBSD_8RW2nYsw"><i class="fab fa-youtube"></i></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-1-of-2">
                     <p class="footer__copyright">
-                        Contacts <a href="#" class="footer__link">E-mail: info.a&p@gmail.com</a> Phone number: <a href="#" class="footer__link">868422628</a> Office number: <a href="#" class="footer__link">858422628</a> Adress: <a href="#" class="footer__link"> Some.Street.21-52</a>.
+                        Contacts: <a href="#" class="footer__link">E-mail: info.a&p@gmail.com</a> Address: <a href="#" class="footer__link">City:Vilnius Some.Street.21-52</a>.
+                    </p>
+                    <p class="footer__copyright">
+                        Phone number: <a href="#" class="footer__link">868422628</a>
+                        Office number: <a href="#" class="footer__link">+37068422628</a>
+                    </p>
+                    <p class="footer__copyright">
                         Copyright &copy; by A&P.
                     </p>
                 </div>

@@ -6,10 +6,13 @@
     background-position: top;
     position: relative;
 
-    @include respond(tab-port) {
+    @include respond(phone) {
        width: 100%;
-       -webkit-clip-path: polygon(100% 0%, 100% 0%, 100% 0, 100% 100%, 100% 100%, 100% 100%, 0 100%, 0 0);
-        clip-path: polygon(100% 0%, 100% 0%, 100% 0, 100% 100%, 100% 100%, 100% 100%, 0 100%, 0 0);
+       background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary, 0.7),
+        rgba($color-primary-dark, 0.7)),
+    url(../img/header-1.jpg);
     }
 
     &__logo-box {

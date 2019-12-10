@@ -32,6 +32,11 @@
             filter: grayscale(100%);
             transition: 2s;
 
+            @include respond(phone) {
+                height: 85%;
+                width: 85%;
+            }
+
             &:hover {
                 filter: grayscale(0%);
                 transform: scale(1.1);  
