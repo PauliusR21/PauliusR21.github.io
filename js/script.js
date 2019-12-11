@@ -13,7 +13,6 @@ window.onload = function() { //executes this code after the DOM loads
      })
    }
  }
-
 // loading
 
 var myVar;

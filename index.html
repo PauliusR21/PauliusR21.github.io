@@ -12,7 +12,7 @@
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         <title>A&P | Creations</title>
     </head>
-    <body onload="myFunction()" style="margin:0;">
+    <body onload="myFunction()">
     <!-- <div id="loader"></div>
     <div style="display:none;" id="myDiv" class="animate-bottom"></div> -->
         <nav class="navigation">
@@ -25,7 +25,8 @@
         <header class="header u-margin-bottom-big">
         <div class="bg-video">
             <video class="bg-video__content" autoplay muted loop>
-                <source src="img/stangmovie.mp4" type="stangmovie/mp4">
+                <source src="img/stangmovie.mp4" type="video/mp4">
+                <source src="img/video.webm" type="video/webm">
                 Your browser is not supported!
             </video>
         </div>
@@ -108,14 +109,15 @@
 
                         <img srcset="img/programmer.jpg 300w, img/nat-1-large.jpg 1000w"
                         sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                        alt="Photo 1"
+                        alt="Photo 2"
                         class="composition__photo composition__photo--p2"
                         src="img/programmer.jpg">
 
-                        <video class="autoplay composition__photo composition__photo--p3"controls muted loop>
-                            <source src="img/stangmovie.mp4" type="vid
-                            Your browser is not supported!
-                        </video>
+                        <img srcset="img/header-3.jpg 300w, img/nat-1-large.jpg 1000w"
+                        sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                        alt="Photo 3"
+                        class="composition__photo composition__photo--p3"
+                        src="img/programmer.jpg">
                     </div>
                 </div>
             </div>
@@ -224,92 +226,80 @@
             </div>
         </section>
         <section class="section-gallery" id="section-gallery">
-            <div class="row">
+            <div class="wrap">
                 <div class="u-center-text">
                     <h2 class="heading-secondary">Gallery</h2>
                 </div>
-                <div class="wrap">
+                <!-- <div class="wrap"> -->
                     <div class="gallery">
                         <figure class="gallery__item gallery__item--1">
                             <a href="#img1">
-                                <video class="autoplay gallery__img"controls muted>
+                                <video class="autoplay gallery__img" controls muted>
                                     <source src="img/video.mp4" type="video/mp4">
+                                    <source src="img/video.webm" type="video/webm">
                                     Your browser is not supported!
                                 </video>
                             </a>
-                           <!--  <div class="lightbox" id="img1">
-                                <video class="loghtbox__item" controls>
-                                    <source src="img/video.mp4" type="video/mp4">
-                                    Your browser is not supported!
-                                </video>
-                                <a href="#_" class="btn-close">&times;</a>
-                            </div> -->
                         </figure>
                         <figure class="gallery__item gallery__item--3">
                             <a href="#img3">
-                                <video class="autoplay gallery__img"controls muted>
+                                <video class="autoplay gallery__img" controls muted>
                                     <source src="img/video2.mp4" type="video/mp4">
+                                    <source src="img/video.webm" type="video/webm">
                                     Your browser is not supported!
                                 </video>
                             </a>
-                           <!--  <div class="lightbox" id="img3">
-                                <video class="loghtbox__item" controls>
-                                    <source src="img/video2.mp4" type="video/mp4">
-                                    Your browser is not supported!
-                                </video>
-                                <a href="#_" class="btn-close">&times;</a>
-                            </div> -->
                         </figure>
         
                         <figure class="gallery__item gallery__item--4">
                             <a href="#img4">
-                                <video class="autoplay gallery__img"controls muted>
+                                <video class="autoplay gallery__img" controls muted>
                                     <source src="img/video3.mp4" type="video/mp4">
+                                    <source src="img/video.webm" type="video/webm">
                                     Your browser is not supported!
                                 </video>
                             </a>
-                           <!--  <div class="lightbox" id="img4">
-                                <video class="loghtbox__item" controls>
-                                    <source src="img/video3.mp4" type="video/mp4">
-                                    Your browser is not supported!
-                                </video>
-                                <a href="#_" class="btn-close">&times;</a>
-                            </div> -->
                         </figure>
         
                         <figure class="gallery__item gallery__item--5">
                             <a href="#img5">
-                                <video class="autoplay gallery__img"controls muted>
+                                <video class="autoplay gallery__img" controls muted>
                                     <source src="img/video5.mp4" type="video/mp4">
+                                    <source src="img/video.webm" type="video/webm">
                                     Your browser is not supported!
                                 </video>
                             </a>
-                           <!--  <div class="lightbox" id="img5">
-                                <video class="loghtbox__item" controls>
-                                    <source src="img/video5.mp4" type="video/mp4">
-                                    Your browser is not supported!
-                                </video>
-                                <a href="#_" class="btn-close">&times;</a>
-                            </div> -->
                         </figure>
         
                         <figure class="gallery__item gallery__item--6">
                             <a href="#img6">
-                                <video class="autoplay gallery__img"controls muted>
+                                <video class="autoplay gallery__img" controls muted>
                                     <source src="img/stangmovie.mp4" type="video/mp4">
+                                    <source src="img/video.webm" type="video/webm">
                                     Your browser is not supported!
                                 </video>
                             </a>
-                           <!--  <div class="lightbox" id="img6">
+                        </figure>
+                        <!-- just in case -->
+                        <!-- <figure class="gallery__item gallery__item--6">
+                            <a href="#img6">
+                                <video class="autoplay gallery__img" muted>
+                                    <source src="img/stangmovie.mp4" type="video/mp4">
+                                    <source src="img/video.webm" type="video/webm">
+                                    Your browser is not supported!
+                                </video>
+                            </a>
+                            <div class="lightbox" id="img6">
                                 <video class="loghtbox__item" controls>
                                     <source src="img/stangmovie.mp4" type="video/mp4">
+                                    <source src="img/video.webm" type="video/webm">
                                     Your browser is not supported!
                                 </video>
                                 <a href="#" class="btn-close">&times;</a>
-                            </div> -->
-                        </figure>
+                            </div>
+                        </figure> -->
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
             <!-- <div class="row">
                 <div class="u-center-text">

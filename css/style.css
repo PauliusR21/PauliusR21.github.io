@@ -722,7 +722,7 @@ figure {
 .gallery {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 5vw);
-  grid-gap: 1.5rem;
+  grid-gap: 2rem;
   width: 100%;
   padding-top: 6rem; }
   .gallery__item--1 {
@@ -760,10 +760,6 @@ figure {
     height: 100%;
     object-fit: cover;
     transition: .4s linear; }
-    .gallery__img:hover {
-      opacity: 1;
-      transition: .4s linear;
-      transform: scale(1.2); }
   .gallery__item {
     overflow: hidden; }
   .gallery__item > a {
@@ -1004,6 +1000,7 @@ figure {
 
 .section-gallery {
   background-image: linear-gradient(to right bottom, rgba(109, 22, 94, 0.5), rgba(43, 22, 109, 0.5));
+  clip-path: polygon(50% 0%, 100% 5%, 100% 100%, 50% 95%, 0 100%, 0 5%);
   padding: 10rem 0; }
 
 #loader {
