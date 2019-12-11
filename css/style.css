@@ -1004,7 +1004,6 @@ figure {
 
 .section-gallery {
   background-image: linear-gradient(to right bottom, rgba(109, 22, 94, 0.5), rgba(43, 22, 109, 0.5));
-  clip-path: polygon(50% 0%, 100% 5%, 100% 100%, 50% 95%, 0 100%, 0 5%);
   padding: 10rem 0; }
 
 #loader {
