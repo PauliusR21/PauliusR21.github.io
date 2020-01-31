@@ -1,0 +1,757 @@
+/////////////////////////////////////////////
+//Logo//
+
+.logo {
+
+    &-img{
+        cursor: pointer;
+        height: 9rem;
+        margin-left: 2rem;
+    }
+}
+
+/////////////////////////////////////////////
+//Side navigation
+.side-nav {
+    font-size: 1.4rem;
+    list-style: none;
+    margin-top: 3.5rem;
+
+
+    @media only screen and (max-width: $bp-largest){
+        display: flex;
+        margin: 0;
+    }
+
+    &__item {
+        position: relative;
+
+        &:not(:last-child){
+            margin-bottom: .5rem;
+
+            @media only screen and (max-width: $bp-medium){
+                margin: 0;
+            }
+        }
+
+        @media only screen and (max-width: $bp-medium){
+            flex: 1;
+        }
+    }
+
+    &__item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        background-color: var(--color-primary-light-2);
+        transform: scaleY(0);
+        transition: transform .2s,
+                    width .6s cubic-bezier(.17,.67,.83,.67) .2s,
+                    background-color .1s;
+
+    }
+
+    &__item:hover::before,
+    &__item--active::before {
+        transform: scaleY(1);
+        width: 100%;
+    }
+
+    &__item:active::before {
+        background-color: var(--color-primary-light);
+    }
+
+    &__link:link,
+    &__link:visited {
+        color: var(--color-grey-light-1);
+        text-decoration: none;
+        text-transform: uppercase;
+        display: block;
+        padding: 1.5rem 3rem;
+        position: relative;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+
+        @media only screen and (max-width: $bp-medium){
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-small){
+            flex-direction: column;
+            padding: 1.5rem .5rem;
+        }
+    }
+
+    &__icon {
+        width: 1.75rem;
+        height: 1.75rem;
+        margin-right: 2rem;
+        fill: currentColor;
+
+        @media only screen and (max-width: $bp-small){
+            margin-right: 0;
+            margin-bottom: .7;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+}
+/////////////////////////////////////////////
+//Legal text
+.legal {
+    font-size: 1.2rem;
+    color: var(--color-grey-light-4);
+    text-align: center;
+    padding: 2.5rem;
+
+    @media only screen and (max-width: $bp-largest){
+        display: none;
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// gallery
+.gallery {
+    display: flex;
+    max-width: 100%;
+    max-height: 50rem;
+
+    &__photo {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Overview
+
+.overview {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-image: linear-gradient(to right bottom,  var(--color-primary), var(--color-primary-light));
+    border: 1px solid var(--color-grey-light-1);
+
+    &__heading {
+        font-family:"KGAllofMe", sans-serif;
+        font-size: 3.25rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 1.5rem 3rem;
+
+        @media only screen and(max-width: $bp-small) {
+            font-size: 1.8rem;
+            padding: 1.25rem 2rem;
+        }
+    }
+        
+    &__image{
+        width: 100%;
+        height: 38rem;
+
+        &-logo{
+            width: 100%;
+            height: 100%;
+        }
+
+        @media only screen and(max-width: $bp-small) {
+            height: 15rem;
+        }
+    }
+        
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+// heading text
+
+.text-container{
+    display: flex;
+    
+    .text{
+        margin: 2rem;
+      
+        &__content{
+            color: var(--color-grey-dark-1);
+
+            &-title{
+                font-family:"KGAllofMe", sans-serif;
+                font-size: 2.5rem;
+                font-weight: bold;
+                line-height: 1.25;
+                margin: 0 0 10px;
+
+                @media only screen and(max-width: $bp-small) {
+                    font-size: 1.8rem;
+                }
+            }
+
+            &-paragraph{
+                font-size: 1.6rem;
+                font-weight: 300;
+                line-height: 1.5625;
+                margin-bottom: 1.5rem;
+
+                &-link{
+                    text-decoration: none;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-size: 1.6rem;
+                    font-family:"KGAllofMe", sans-serif;
+                    border: 1px solid var(--color-grey-dark-1);
+                    border-radius: 3px 3px 3px 3px;
+                    box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+                    color: black;
+                    cursor: pointer;
+                    margin-left: 1rem;
+    
+                    &:hover {
+                        background-color: var(--color-primary-light);
+                    }
+                }
+            }
+            
+        }
+    
+    }
+
+        .secondary-navigation{
+            display: flex;
+            flex-direction: row;
+
+            &-button{
+                text-decoration: none;
+                text-align: center;
+                text-transform: uppercase;
+                width: 100%;
+                margin: .5rem;
+                font-size: 2rem;
+                font-family:"KGAllofMe";
+                background-color: var(--color-primary-light-2);
+                border: 1px solid var(--color-grey-dark-1);
+                border-radius: 3px 3px 3px 3px;
+                box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+                color: black;
+                padding: 1rem;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: var(--color-primary-light);
+                    text-decoration: none;
+                }
+
+                @media only screen and(max-width: $bp-small) {
+                    padding: 0;
+                    margin: .2rem;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        
+    
+    
+    @media (max-width: 80rem){
+        flex-wrap: wrap;
+    }
+}
+//////////////////////////////////////////////////////////////////////////////////////////////
+//Composition
+.composition {
+    display: flex;
+    align-items: center;
+    max-width: 155rem;
+
+    &__text{
+        width: 50%;
+        font-size: 1.6rem;
+        font-weight: 300;
+        line-height: 1.5625;
+        margin: 1rem;
+
+        @media (max-width: 60rem){
+            width: 100%;
+        }
+    }
+
+    &__photo{
+        width: 50%;
+        display: block;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: .5rem;
+
+        @media (max-width: 60rem){
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 60rem){
+        flex-wrap: wrap;
+    }
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Cards
+.cards{
+    background-color: var(--color-yellow-light);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: var(--color-grey-light-1);
+    width: 35rem;
+    height: 100%;
+	position: relative;
+	margin: 2rem; 
+	padding-bottom: 3rem;
+    text-align: center;
+    border-radius: .5rem;
+    
+    &__img{
+        width: 100%;
+        height: 25rem;
+        border-radius: .5rem;
+    }
+
+    &__heading{
+        position: absolute;
+        background-color: rgba($color: #62a028, $alpha: .8);
+        color: white;
+        top: 21rem;
+        width: 100%;
+        padding: 1rem;
+
+        &-text{
+            font-family:"KGAllofMe", sans-serif;
+            font-size: 2rem;
+            font-weight: bold;
+            line-height: 1;
+        }
+    }
+
+    &__paragraph{
+        margin: 1rem;
+        font-size: 1.6rem;
+        font-weight: 300;
+        line-height: 1.5625;
+    }
+}
+////////////////////////////////////////////////////////////////////////////////////////////////
+//Footer
+.footer {
+    background-color: var(--color-primary-dark);
+    padding: 2rem 0;
+    font-size: 1.4rem;
+    color: yellowgreen;
+    display: flex;
+    justify-content: space-around;
+
+    &__logo-box {
+        text-align: center;
+    }
+
+    &__logo {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    &__information {
+        border-top: 1px solid var(--color-yellow-light);
+        padding-top: 2rem;
+        display: inline-block;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        margin: .5rem;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            color: var(--color-yellow-light);
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all .2s;
+        }
+
+        &:hover,
+        &:active {
+            color: var(--color-primary-light-2);
+            box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .2);
+            transform: rotate(5deg) scale(1.3);
+        }
+    }
+    @media (max-width: 60rem){
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////
+// News
+.news-container{
+    background-color: var(--color-grey-light-3);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.news {
+    font-family:"KGAllofMe", sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 3rem;
+    min-width: 25rem;
+    max-width: 31rem;
+    width: 100%;
+    background-color: var(--color-primary-light-2);
+    color: #000000;
+    text-align: left;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+
+    &__image{
+        max-height: 22rem;
+        overflow: hidden;
+
+        &-img{
+            max-width: 100%;
+            vertical-align: top;
+            position: relative;
+        }
+    }
+
+}
+.text {
+    margin: -2rem 1.5rem 0;
+    padding: 1.5rem ;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: .5rem;
+
+    &__date{
+        color: #fff;
+        min-height: 4.8rem;
+        min-width: 4.8rem;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        &-day{
+            display: block;
+            line-height: 2.4rem;
+            background-color: var(--color-primary-light);
+            border-radius: .5rem .5rem 0rem 0rem;
+        }
+
+        &-month{
+            display: block;
+            font-size: 1.4rem;
+            background-color: var(--color-primary-light-2);
+            border-radius: 0rem 0rem .5rem .5rem;
+        }
+    }
+
+    &__heading{
+        margin: 1rem;
+        display: inline-block;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__paragraph{
+        font-size: 0.8em;
+        margin-bottom: 2rem;
+        line-height: 1.6em;
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+//routine
+.routine{
+    font-family:"KGAllofMe", sans-serif;
+    font-size: 1.6rem;
+    border-collapse: collapse;
+    width: 98%;
+    height: auto;
+    margin: 1rem;
+
+    &__row{
+        border: 2px solid white;
+
+        &-th{
+            background-color: var(--color-primary-light-2);
+            padding: 2rem;
+        }
+
+        &-td{
+            background-color: var(--color-yellow-light);
+            text-align: left;
+            background-color: none;
+            padding: 1.5rem;
+
+            &-time{
+                text-align: center;
+                background-color: rgba($color: #dfe79165, $alpha: 1.0);
+                padding: 1.5rem;
+            }
+        }
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+//Stats
+
+.container-statistic{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.statistic{
+    background-image: linear-gradient(to right bottom,  var(--color-primary), var(--color-primary-light));
+    width: 30rem;
+    height: auto;
+    border: 1.5rem inset rgb(126, 228, 10);
+    border-radius: 4rem;
+    -webkit-box-shadow: 0px 16px 28px 15px rgba(0,0,0,0.3); 
+    box-shadow: 0px 16px 28px 15px rgba(0,0,0,0.3);
+    margin: 2rem;
+    text-align: center;
+
+    &__number{
+        font-size: 4rem;
+        color: white;
+
+    }
+    &__text{
+        font-family:"KGAllofMe", sans-serif;
+        font-size: 2rem;
+        color: black;
+    }
+
+    &:hover {
+        transform: scale(1.2, 1.2);
+        box-shadow: .5rem .5rem 3rem 1.5rem rgba(0,0,0,0.25), 
+          -.5rem -.5rem 3rem 1.5rem rgba(0,0,0,0.22);
+    }
+}
+///////////////////////////////////////////////////////////////////////////////////////////////// 
+//Vacation
+table.darkTable {
+    font-family:"KGAllofMe", sans-serif;
+    border: 2px solid var(--color-grey-light-3);
+    background: linear-gradient(to right, var(--color-primary), var(--color-primary-light));
+    width: 100%;
+    height: 20rem;
+    text-align: center;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+  }
+  table.darkTable td, table.darkTable th {
+    border: 1px solid var(--color-grey-light-3);
+    padding: 2rem .5rem;
+    cursor: pointer;
+    @media only screen and(max-width: $bp-small) {
+        padding: .5rem .1rem;
+    }
+
+    &:hover{
+        background-color: rgb(4, 163, 44);
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+  
+        box-shadow:  #16581c -1px 1px, #16581c -2px 2px, #16581c -3px 3px, #16581c -4px 4px, #16581c -5px 5px, #16581c -6px 6px;
+        transform: translate3d(6px, -6px, 0);
+  
+        transition-delay: 0s;
+	    transition-duration: 0.4s;
+	    transition-property: all;
+        transition-timing-function: line;
+    }
+  }
+  table.darkTable tbody td {
+    font-size: 1.5rem;
+    color: #E6E6E6;
+  }
+  table.darkTable tr:nth-child(even) {
+    background: linear-gradient(to right, var(--color-primary), var(--color-primary-light));
+  }
+  table.darkTable thead {
+    background-color: rgba(31, 185, 0, 0.3);
+    border-bottom: 3px solid var(--color-grey-light-3);
+  }
+  table.darkTable thead th {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #E6E6E6;
+    text-align: center;
+    border-left: 2px solid var(--color-grey-light-3);
+
+    @media only screen and(max-width: $bp-small) {
+        font-size: 1.4rem;
+    }
+  }
+  table.darkTable thead th:first-child {
+    border-left: none;
+  }
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+// photo center
+.photo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    &__center{
+        width: 50%;
+    }
+}
+////////////////////////////////////////////////////////////////////////////////////////////////
+// pricing
+.pricing-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: white;
+}
+.pricing{
+    font-family:"KGAllofMe";
+    position: relative;
+    overflow: hidden;
+    margin: 3rem;
+    min-width: 25rem;
+    max-width: 35rem;
+    width: 100%;
+    background-color: white;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: .5rem;
+    border: .1rem solid rgb(80, 119, 226);
+
+    &__text{
+
+        &-price{
+            color: rgb(80, 119, 226);
+            font-size: 2rem;
+            font-weight: 300;
+        }
+
+        &-paragraph{
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+
+        &-heading{
+            width: 100%;
+            color: white;
+            background-color: rgb(80, 119, 226);
+            font-size: 1.6rem;
+            font-weight: 900;
+        }
+    }
+}
+////////////////////////////////////////////////////////////////////////////////////////////////
+//map
+.maps {
+    background-color: var(--color-primary-light);
+    margin: 2rem;
+    font-family:"KGAllofMe";
+
+    &__heading {
+        font-size: 2.25rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--color-grey-dark-1);
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-grey-light-2);
+        padding: 2rem;
+
+        &-title {
+            font-size: 1.8rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--color-grey-dark-2)
+
+        }
+    }
+
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////
+.information{
+    //background-color: var(--color-primary-light-2);
+    padding: 2rem 0;
+    font-size: 2rem;
+    font-family: "KGAllofMe";
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 2rem solid var(--color-primary-light);
+    
+
+    &__heading{
+        font-size: 2.2rem;
+        color: var(--color-grey-dark-1);
+        margin-left: .5rem;
+        margin-bottom: 1rem;
+    }
+
+    &__text{
+        //border-top: 1px solid  black;
+        padding-top: 2rem;
+        display: inline-block;
+    }
+
+    &__list{
+        list-style: none;
+    }
+
+    &__item{
+        margin: .5rem;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            color: var(--color-grey-dark-1);
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all .2s;
+        }
+
+        &:hover,
+        &:active {
+            color:  var(--color-grey-dark-1);;
+            box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .2);
+            transform: rotate(5deg) scale(1.3);
+        }
+    }
+
+    @media (max-width: 60rem){
+        flex-direction: column;
+        text-align: center;
+    }
+}

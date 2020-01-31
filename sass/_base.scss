@@ -1,0 +1,82 @@
+/*
+COLORS
+
+Primary: #1f563f;
+Primary light: #8ec63f;
+Primary light-2: #93ca3b;
+
+Grey light 1: #faf9f9
+Grey light 2: #f4f2f2
+Grey light 3: #f0eeee
+Grey light 4: #ccc
+
+Grey dark 1: #333
+Grey dark 2: #777
+Grey dark 3: #999
+
+*/
+
+:root {
+    --color-primary: #226526;
+    --color-primary-light:#98bf0e;
+    --color-primary-light-2:#6d9e16;
+    --color-primary-dark: #004b2d;
+
+    --color-grey-light-1:#faf9f9;
+    --color-grey-light-2:#f4f2f2;
+    --color-grey-light-3:#f0eeee;
+    --color-grey-light-4: #ccc;
+
+    --color-grey-dark-1: #333;
+    --color-grey-dark-2 : #777;
+    --color-grey-dark-3: #999;
+
+    --color-yellow-light: #FFF5CA;
+    --color-yellow-dark: #C6A40E;
+    --color-blue-light: rgb(155, 255, 255);
+    --color-blue-dark: rgb(0, 81, 255);
+
+}
+
+$bp-largest: 75em;//1200px
+$bp-large: 68em;//1100px
+$bp-medium: 56.25em;//900px
+$bp-small: 37.5em;//600px
+$bp-smallest: 31.25em;//500px
+
+@font-face {
+    font-family:"KGAllofMe";
+    src: url("../font/KGAllofMe.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+    @media only screen and(max-width: $bp-large) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    background-image: linear-gradient(to right bottom, var(--color-primary), var(--color-primary-light));
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--color-grey-dark-1);
+
+    min-height: 100vh;
+}

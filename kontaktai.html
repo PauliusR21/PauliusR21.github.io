@@ -8,9 +8,11 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
         <!--  logo tab -->
-        <link rel="shortcut icon" type="image/png" href="img/Logotipai/logo_mazas.jpg"> 
+        <link rel="shortcut icon" type="image/png" href="img/Logotipai/logo_mazas.jpg">
+        <!-- <link rel="stylesheet" href="js/script.js"> -->
 
-        <title>Diemedis | Pagrindinis</title>
+
+        <title>Diemedis | Nuotolinis Mokymas</title>
     </head>
     <body>
         <div class="container">
@@ -56,7 +58,7 @@
                                 <span>Nuotolinis mokymas</span>
                             </a>
                         </li>
-                        <li class="side-nav__item">
+                        <li class="side-nav__item side-nav__item--active">
                             <a href="kontaktai.html" class="side-nav__link">
                                 <svg class="side-nav__icon">
                                     <use xlink:href="img/sprite.svg#icon-old-phone"></use>
@@ -81,46 +83,52 @@
                             <img src="img/gallery/gallery-3.jpg" alt="Photo of school 3" class="gallery__photo">
                         </figure>
                     </div>
-
                     <div class="overview">
-                        <h1 class="overview__heading">Pagrindinis/Naujienos</h1>
+                        <h1 id="#" class="overview__heading">Kontaktai</h1>
                     </div>
+                    <div class="maps">
+                        <h2 class="maps__heading">
+                            Diemedis: Vilnius
+                        </h2>
+                        <div class="maps__list">
 
-                    <div class="news-container">
-                        <figure class="news">
-                            <div class="news__image"><img class="news__image-img" src="img/gallery/gallery-3.jpg" alt="news"/></div>
-                            <div class="text">
-                              <div class="text__date"><span class="text__date-day">28</span><span class="text__date-month">Oct</span></div>
-                              <h3 class="text__heading">Išplauka su baidarėmis</h3>
-                              <p class="text__paragraph">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae nobis voluptatum provident, tempore error sapiente placeat inventore, cum obcaecati saepe beatae maiores enim voluptatem nulla sit deleniti excepturi recusandae. Et.
-                              </p>
+                            <div class="maps__list-title">
+                                A. Kojelavičiaus g. 1, Vilnius 11100
                             </div>
-                        </figure>
-                        <figure class="news">
-                            <div class="news__image"><img class="news__image-img" src="img/gallery/gallery-3.jpg" alt="news"/></div>
-                            <div class="text">
-                              <div class="text__date"><span class="text__date-day">21</span><span class="text__date-month">Oct</span></div>
-                              <h3 class="text__heading">Kelionė į Rygą</h3>
-                              <p class="text__paragraph">
-                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, facere. Vero nemo velit sapiente, obcaecati illo odit voluptas eos expedita laboriosam facilis alias quia neque dolores numquam maiores rerum est.
-                              </p>
+                            <div class="maps__list-item 1">
+                                <div id="map" style="width:100%;height:40rem;"></div>
                             </div>
-                        </figure>
-                        <figure class="news">
-                            <div class="news__image"><img class="news__image-img" src="img/gallery/gallery-3.jpg" alt="news"/></div>
-                            <div class="text">
-                              <div class="text__date"><span class="text__date-day">07</span><span class="text__date-month">Oct</span></div>
-                              <h3 class="text__heading">Stovykla su palapinėmis</h3>
-                              <p class="text__paragraph">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum ex officia, possimus maxime illum expedita accusantium ea repellendus qui mollitia nesciunt, iure porro autem veniam eveniet dolorum adipisci suscipit cum?
-                              </p>
-                            </div>
-                        </figure>
+                        </div>
+                    </div>
+                    <div class="information">
+                        <div class="information__text">
+                            <h3 class="information__heading">Kontaktinė informacija</h3>
+                            <ul class="information__list">
+                                <li class="information__item"><a href="#" class="information__link">Vaikų meninė studija „Diemedis“ </a></li>
+                                <li class="information__item"><a href="#" class="information__link">A. Kojelavičiaus g. 1; 11100 Vilnius</a></li>
+                                <li class="information__item"><a href="#" class="information__link">info@diemedis.lt</a></li>
+                                <li class="information__item"><a href="#" class="information__link">www.diemedis.lt</a></li>
+                                <li class="information__item"><a href="#" class="information__link">Mob. tel.: 8 65210534</a></li>
+                            </ul>
+                        </div>
+                        <div class="information__text">
+                            <h3 class="information__heading">Socialiniai tinklai</h3>
+                            <ul class="information__list">
+                                <li class="information__item"><a href="https://www.facebook.com/diemedis.lt" class="information__link" target="_blank">Facebook&nbsp;<i class="fab fa-facebook-square"></i></a></li>
+                                <li class="information__item"><a href="https://www.youtube.com/watch?v=3iH0ewEaT68&list=PLO3IrZdANT7wc8oula4PKjsPVqeYYpaWQ" class="information__link" target="_blank">Youtube&nbsp;<i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="information__text">
+                            <h3 class="information__heading">Įmonės rekvizitai</h3>
+                            <ul class="information__list">
+                                <li class="information__item"><a href="#" class="information__link">Įm. kodas 191832470</a></li>
+                                <li class="information__item"><a href="#" class="information__link">Ats. sąsk. LT197300010131195027</a></li>
+                                <li class="information__item"><a href="#" class="information__link">AB Swedbank</a></li>
+                            </ul>
+                        </div>
                     </div>
                     
 
-                    
 
                     <footer class="footer">
                         <div class="footer__information">
@@ -142,5 +150,21 @@
                 </main>
             </div>
         </div>
+        <script>
+            function initMap() {
+                var location = {lat: 54.693330, lng: 25.362810};
+                var map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 15,
+                    center: location
+                });
+                var marker = new google.maps.Marker({
+                    position: location,
+                    map: map
+                });
+            }
+            
+            </script>
+            
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDFYWq8Cp3kLX-IOjCRqVUb5zFcQYp06w&callback=initMap"></script>
     </body>
 </html>

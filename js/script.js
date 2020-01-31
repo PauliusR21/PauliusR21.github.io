@@ -1,25 +1,13 @@
-// VIDEO AUTOPLAY
-window.onload = function() { //executes this code after the DOM loads
-    //--- this is the selector element. Feel free to change this if you don't want all video objects targeted.
-   const vids =  document.getElementsByClassName('autoplay');
- 
-    //--- Now we loop over all of the selected elements and add event listeners
-   for (let i = 0; i < vids.length; i++) {
-     vids[i].addEventListener( `mouseover`, function(e) { 
-       vids[i].play()
-     })
-     vids[i].addEventListener( `mouseout`, function(e) {
-       vids[i].pause()
-     })
-   }
- }
-// loading
-
-var myVar;
-function myFunction() {
-    myVar = setTimeout(showPage, 3000);
-}
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
-}
+// function initMap() {
+//     var location = {lat: 54.693330, lng: 25.362810};
+//     var map = new google.maps.Map(document.getElementById("map"), {
+//         zoom: 15,
+//         center: location
+//     });
+//     var marker = new google.maps.Marker({
+//         position: location,
+//         map: map
+//     });
+// }
+//async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDFYWq8Cp3kLX-IOjCRqVUb5zFcQYp06w&callback=initMap"
+//GoogleMap
