@@ -13,6 +13,27 @@
         <title>Diemedis | Apie mus</title>
     </head>
     <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="apie_mus.html" class="navigation__link">Apie mus</a></li>
+                    <li class="navigation__item"><a href="mokykla.html" class="navigation__link">Mokykla</a></li>
+                    <li class="navigation__item"><a href="darzelis.html" class="navigation__link">Darželis</a></li>
+                    <li class="navigation__item"><a href="nuotolinis.html" class="navigation__link">Nuotolinis mokymas</a></li>
+                    <li class="navigation__item"><a href="kontaktai.html" class="navigation__link">Kontaktai</a></li>
+                    <li class="navigation__item"><a href="index.html" class="navigation__link">Naujienos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- //nav test -->
         <div class="container">
             <header class="header">
                 <a href="index.html" class="logo">
@@ -22,52 +43,24 @@
             <div class="content">
                 <nav class="sidebar">
                     <ul class="side-nav">
-                        <li class="side-nav__item side-nav__item--active">
-                            <a href="#" class="side-nav__link">
-                                <svg class="side-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-tree"></use>
-                                </svg>
-                                <span>Apie mus</span>
+                        <li class="side-nav__item">
+                            <a href="#part1" class="side-nav__link">
+                                <span>Meninis ugdymas</span>
                             </a>
                         </li>
                         <li class="side-nav__item">
                             <div class="dropdown">
-                                <a href="mokykla.html" class="side-nav__link">
-                                    <svg class="side-nav__icon">
-                                        <use xlink:href="img/sprite.svg#icon-graduation-cap"></use>
-                                    </svg>
-                                    <span>Mokykla</span>
+                                <a href="#part2" class="side-nav__link">
+                                    <span>Mokytojai</span>
                                 </a>
                             </div>
                         </li>
                         <li class="side-nav__item">
-                            <a href="darzelis.html" class="side-nav__link">
-                                <svg class="side-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-open-book"></use>
-                                </svg>
-                                <span>Darželis</span>
-                            </a>
-                        </li>
-                        <li class="side-nav__item">
-                            <a href="nuotolinis.html" class="side-nav__link">
-                                <svg class="side-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-laptop"></use>
-                                </svg>
-                                <span>Nuotolinis mokymas</span>
-                            </a>
-                        </li>
-                        <li class="side-nav__item">
-                            <a href="kontaktai.html" class="side-nav__link">
-                                <svg class="side-nav__icon">
-                                    <use xlink:href="img/sprite.svg#icon-old-phone"></use>
-                                </svg>
-                                <span>Kontaktai</span>
+                            <a href="#part3" class="side-nav__link">
+                                <span>Istorija</span>
                             </a>
                         </li>
                     </ul>
-                    <div class="legal">
-                        &copy; 2020 by Diemedis.
-                    </div>
                 </nav>
                 <main class="school-view">
                     <div class="gallery">
@@ -99,11 +92,11 @@
                                 <p class="text__content-paragraph">
                                     Skiriame dėmesį vaikų fizinei raidai: turime gimnastikos, rytų kovos menų, ritmikos užsiėmimus. Erdviame kieme įrengtos sūpynės, laipynės, smėlio dėžė, krepšinio ir futbolo aikštelės. 
                                 </p>
-                                <div class="secondary-navigation">
+                                <!-- <div class="secondary-navigation">
                                     <a href="#part1" class="secondary-navigation-button">Meninis ugdymas &rarr;</a>
                                     <a href="#part2" class="secondary-navigation-button">Mokytojai &rarr;</a>
                                     <a href="#part3" class="secondary-navigation-button">Istorija &rarr;</a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
